@@ -1,0 +1,241 @@
+:root{
+	/* Rood: */
+	--rood:#ff0000;
+	--donkerRood:#b30000;
+	
+	/* Blauw: */
+	--lichtBlauw:#00ccff;
+	--blauw:#0000cc;
+	--donkerBlauw:#000066;
+	
+	--blauwGroen:#00ff99;
+	--donkerBlauwGroen:#00995c;
+	--websiteBlauw:#4290DE;
+	--lichtBlauwGroen:#66ffc2;
+	
+	/* Groen: */
+	--lichtGroen:#66ff66;
+	--groen:#00ff00;
+	--donkerGroen:#008000;
+	
+	--campingGroen:#ccffcc;
+	--lichtGroenBlauw:#66ffc2;
+	--groenBlauw:#00ff99;
+	--donkerGroenBlauw:#00995c;
+	
+	/* Geel: */
+	--lichtGeel:#ffff4d;
+	--geel:#ffff1a;
+	--donkerGeel:#cccc00;
+	
+	/* Orange: */
+    --orange:#ff751a;
+	--donkerOrange:#cc5200;
+	
+	/* Bruin: */
+	--lichtBruin:#e06f1f;
+	--bruin:#8B4513;
+	--donkerBruin:#432109;
+	
+	--ekkoBruin:#68485D;
+	
+	/* Wit */
+	--wit:#ffffff;
+	
+	--donkerderWit:#f2f2f2;
+	
+	/* Zwart */
+	--lichtZwart: #1a1a1a;
+	--zwart:#000000;
+	
+	/* Grijs */
+	--lichtGrijs:#e6e6e6;
+	--grijs:#999999;
+	--donkerGrijs:#4d4d4d;
+	
+	/* Roze */
+	--lichtRoze:#ffccff;
+	--roze:#ff66ff;
+	--donkerRoze:#ff00ff;
+	
+	--jigglypuffRoze:#F5D5DD;
+	
+	/* Paars */
+	--lichtPaars:#e600e6;
+	--paars:#b300b3;
+	--donkerPaars:#660066;
+	
+	/* Overig: */
+	--teemo:#EFD7AD;
+	--void:#26184B;
+	--hout:#E7BE96;
+	--mens:#d4a75c;
+	--snavel:#5F7A92;
+	--leeg:transparant;
+	
+	/*
+		Voorbeeld: background-color: var(--rood);
+	*/
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td
+{
+	border: 1px solid black;
+	text-align: center;
+}
+
+a{
+	color: #0d0d0d;
+	text-decoration: none;
+}
+
+.displayNone{
+	display: none;
+}
+
+.floatCenter{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.noSelect{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.fancyKnop1{
+	border: 4px outset;
+	border-color: #d9d9d9 #e6e6e6 #e6e6e6 #d9d9d9;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    box-shadow: 4px 3px 5px #333333;
+	text-align: center;
+	width: 90%;
+	font-size: 20px;
+	padding: 2px;
+	padding-bottom: 4px;
+    outline: none;
+}
+
+.fancyKnop1:active{
+	border: 4px solid;
+	border-color: #929292;
+    background-color: #f5f5f5;
+	box-shadow: 1px 1px 4px #333333;
+	transition: box-shadow 0.2s, border-top-color 0.2s, border-left-color 0.2s;
+}
+
+.fancyKnopUit{
+	border: 4px solid;
+	border-color: #e6e6e6 #d9d9d9 #d9d9d9 #e6e6e6;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 13px black;
+	text-align: center;
+	width: 90%;
+	font-size: 20px;
+	padding: 4px;
+	padding-bottom: 6px;
+	outline: none;
+	transition: background-color 0.2s;
+}
+
+.fancyKnopUit:active{
+    background-color: #cc0000;
+    box-shadow: inset 2px 2px 25px #330000;
+}
+
+.orangeButton{
+	box-shadow: 1px 1px 2px black;
+	background-color: #ff751a;
+	color: white;
+	cursor: pointer;
+	border: none;
+    border-bottom: 0.4vh solid #993d00;
+    border-right: 0.3vh solid #993d00;
+    text-align: center;
+    outline: 0;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.orangeButton:active{
+	background-color: #993d00;
+	border: none;
+    box-shadow: inset 2px 1px 2px black;
+}
+
+.greenButton{
+	box-shadow: 1px 1px 2px black;
+	background-color: #99ff99;
+	color: #009933;
+	cursor: pointer;
+	border: none;
+    border-bottom: 0.4vh solid #009933;
+    border-right: 0.3vh solid #009933;
+    text-align: center;
+    outline: 0;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.greenButton:active{
+	background-color: #009933;
+	color: #99ff99;
+	border: none;
+    box-shadow: inset 2px 1px 2px black;
+}
+
+.redButton{
+	box-shadow: 1px 1px 2px black;
+	background-color: #ff6666;
+	color: white;
+	cursor: pointer;
+	border: none;
+    border-bottom: 0.4vh solid #660000;
+    border-right: 0.3vh solid #660000;
+    text-align: center;
+    outline: 0;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.redButton:active{
+	background-color: #660000;
+	border: none;
+    box-shadow: inset 2px 1px 2px black;
+}
