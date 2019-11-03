@@ -41,6 +41,10 @@ header{
 	text-decoration: underline;
 }
 
+a{
+	color: #FBA92D !important;
+}
+
 #content{
 	width: 100%;
 	min-height: calc(100vh - 9vw);
@@ -66,29 +70,52 @@ footer{
 
 footer a{
 	display: block;
-	color: black;
+	color: black !important;
 	font-size: 0.8vw;
 	font-weight: bold;
 	margin-top: 14.89vw;
+}
+
+h1{
+	color: #FBA92D;
+	font-size: 2.6vw;
+	padding-left: 0.4vw;
+}
+
+h2{
+	color: #D29E50;
+	font-size: 1.9vw;
+	border-bottom: 1px solid #D29E50;
+	margin-bottom: 0.8vh;
+}
+
+h3{
+	color: #D29E50;
+	font-weight: normal;
+	font-size: 1.2vw;
+	margin-bottom: 1.4vh;
+}
+
+.grayTransparentBox{
+	background-color: rgba(81, 90, 101, 0.85);
+	padding: 1vh;
+}
+
+.grayTransparentBoxBorderLines{
+	height: 100%;
+	border-left: 1px solid #D29E50;
+	border-right: 1px solid #D29E50;
+	padding-left: 2vh;
+	padding-right: 2vh;
 }
 
 #homeBox{
 	float: left;
 	width: 55%;
 	height: 32vw;
-	background-color: rgba(81, 90, 101, 0.95);
 	margin-top: 6vh;
 	margin-left: 6vw;
 	margin-bottom: 6vh;
-	padding: 1vh;
-}
-
-#homeBoxTekst{
-	height: 100%;
-	border-left: 1px solid #D29E50;
-	border-right: 1px solid #D29E50;
-	padding-left: 2vh;
-	padding-right: 2vh;
 }
 
 #antHomeImage{
@@ -104,30 +131,239 @@ footer a{
 	bottom: 0px;
 }
 
+#programmingBox{
+	margin: 5vh auto;
+	width: 80%;
+	display: 0px;
+	padding-bottom: 3vh;
+}
+
+#programmingBox h2{
+	text-align: center;
+}
+
+#programmingBox h3{
+	text-align: justify;
+	width: 80%;
+}
+
+#gastlyContainer{
+	margin-left: 72vw;
+    padding-top: 6vh;
+}
+
+#designBox{
+	margin: 7vh auto;
+	width: 80%;
+	display: 0px;
+	padding-bottom: 3vh;
+}
+
+#designBox h2{
+	text-align: center;
+}
+
+#designBox h3{
+	text-align: justify;
+}
+
+#designTalkContainer{
+	
+}
+
 #brainBoi{
-	width: 800px;
-	height: 528px;
-	background-image: url(img/brainboiTrans.gif);
+	width: 22vw;
+	height: 18vw;
+	background-image: url(img/brainboiTrans2.gif);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	float: right;
 }
 
-h1{
-	color: #FBA92D;
-	font-size: 2.7vw;
-	padding-left: 0.4vw;
+.graphContainer{
+	background-color: #e3e5e8;
+	width: 90%;
+	height: auto;
+	margin: 1vh auto;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	margin-bottom: 2vh;
 }
 
-h2{
-	color: #D29E50;
-	font-size: 2vw;
-	border-bottom: 1px solid #D29E50;
-	margin-bottom: 0.8vh;
+.graph{
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
 }
 
-h3{
-	color: #D29E50;
-	font-weight: normal;
+.graph span{
+	display: inline-block;
+}
+
+.graphTitle{
 	font-size: 1.3vw;
-	margin-bottom: 1.4vh;
+	padding-right: 0.5vw;
+	text-align: right;
+	width: 22%;
+}
+
+.graphBalkHolder{
+	width: 67%;
+	height: 1.5vw;
+	padding-top: 0.8vh;
+}
+
+.graphBalk{
+	height: 100%;
+	border: 1px solid #515A65;
+}
+
+.graphBalkYellow{
+	background-color: #D29E50;
+}
+
+.graphBalkPink{
+	background-color: #e26365;
+}
+
+.graphPercentage{
+	font-size: 1.3vw;
+	text-align: left;
+}
+
+#portfolioBox{
+	text-align: center;
+	width: 40%;
+	margin: 2vh auto;
+}
+
+#newTabBox{
+	width: 70%;
+	margin-bottom: 6vh;
+	margin-left: 6vw;
+	margin-top: 14vh;
+	text-align: justify;
+	padding-left: 1vw;
+	padding-right: 2vw;
+}
+
+#newTabLeftText{
+    width: 19vw;
+    height: 55vh;
+    display: inline-block;
+}
+
+#newTabImage{
+	width: 70vw;
+    height: 70vh;
+    background-image: url(img/newtab.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: 20vw;
+    margin-top: -70vh;
+    display: inline-block;
+}
+
+#newTabBox h3{
+	width: 100%;
+	display: block;
+}
+
+#legoshopBox{
+	width: 80%;
+    margin: 14vh auto;
+    text-align: justify;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    height: 80vh;
+}
+
+#legoshopImage{
+	width: 50vw;
+    height: 86vh;
+    background-image: url(img/legoshop.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: -9vw;
+    margin-top: -5vh;
+    display: inline-block;
+}
+
+#legoRightText{
+	float: right;
+	width: 33.5vw;
+}
+
+#animeShowdownBox{
+	width: 85vw;
+	margin: 0vh auto;
+	padding-bottom: 18vh;
+}
+
+#animeshowdownText{
+	width: 38vw;
+	padding-left: 1vw;
+}
+
+#animeShowdownImageContainer{
+	margin-top: -68vh;
+	float: right;
+}
+
+#animeshowdownImage1{
+	width: 45vw;
+    height: 45vh;
+    background-image: url(img/animeshowdown1.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 5vh;
+}
+
+#animeshowdownImage2{
+	width: 45vw;
+    height: 45vh;
+    background-image: url(img/animeshowdown2.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#animeshowdownCard{
+	width: 24vw;
+    height: 58vh;
+    background-image: url(img/animeshowdownCard.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -11vw;
+    margin-left: 13vw;
+}
+
+#youtubeIframe{
+	margin-left: 7vw;
+	margin-top: 5vh;
+	display: inline-block;
+}
+
+#antmationBox{
+	width: 52vw;
+    margin-left: 43vw;
+    margin-top: -25vw;
+    height: 17vw;
+    margin-bottom: 4vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#antmationImage{
+	width: 22vw;
+    height: 22vw;
+    background-image: url(img/antmation.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-bottom: 5vh;
 }
