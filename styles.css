@@ -1,9 +1,107 @@
+body{
+	background-color: black;
+}
+
+header{
+	background-color: #515A65;
+	height: 11vh;
+	width: 100%;
+	position: fixed;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerItem{
+	font-size: 2vw;
+	font-weight: bold;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	margin-bottom: 4px;
+	color: #D29E50;
+}
+
+.headerItem:hover{
+	color: #FBA92D;
+}
+
+.headerItem:first-child{
+	border-left: 1px solid #D29E50;
+	padding-left: 1.5vw;
+}
+
+.headerItem:last-child{
+	border-right: 1px solid #D29E50;
+	padding-right: 1.5vw;
+}
+
+.selected{
+	color: #FBA92D;
+	text-decoration: underline;
+}
+
+#content{
+	width: 100%;
+	min-height: calc(100vh - 9vw);
+	padding-top: 10vh;
+	background-image: url(img/forestpathBlurSmall.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	overflow: hidden;
+}
+
+footer{
+	background-color: #515A65;
+	border-top: 3vh solid #515A65;
+	width: 100%;
+	height: 19vw;
+	background-image: url(img/cityNight.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	text-align: center;
+}
+
+footer a{
+	display: block;
+	color: black;
+	font-size: 0.8vw;
+	font-weight: bold;
+	margin-top: 14.89vw;
+}
+
+#homeBox{
+	float: left;
+	width: 55%;
+	height: 32vw;
+	background-color: rgba(81, 90, 101, 0.95);
+	margin-top: 6vh;
+	margin-left: 6vw;
+	margin-bottom: 6vh;
+	padding: 1vh;
+}
+
+#homeBoxTekst{
+	height: 100%;
+	border-left: 1px solid #D29E50;
+	border-right: 1px solid #D29E50;
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
 #antHomeImage{
-	width: 488px;
-	height: 900px;
+	width: 25.644vw;
+	/*height: 96.051vh;*/
+	height: 47.294vw;
 	background-image: url(img/ant.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	float: right;
+	margin-top: 5vh;
+	margin-right: 9vw;
+	bottom: 0px;
 }
 
 #brainBoi{
@@ -12,4 +110,24 @@
 	background-image: url(img/brainboiTrans.gif);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+}
+
+h1{
+	color: #FBA92D;
+	font-size: 2.7vw;
+	padding-left: 0.4vw;
+}
+
+h2{
+	color: #D29E50;
+	font-size: 2vw;
+	border-bottom: 1px solid #D29E50;
+	margin-bottom: 0.8vh;
+}
+
+h3{
+	color: #D29E50;
+	font-weight: normal;
+	font-size: 1.3vw;
+	margin-bottom: 1.4vh;
 }
