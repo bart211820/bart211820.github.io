@@ -1,5 +1,33 @@
 body{
-	background-color: black;
+	background-color: #515A65;
+}
+
+#mobileBlocker{
+	height: 150vh;
+	width: 100%;
+	background-color: #515A65;
+	color: #FBA92D;
+	padding: 50px;
+	text-align: center;
+	position: fixed;
+	display: block;
+}
+
+@media (orientation:landscape) {
+
+	#mobileBlocker {
+		display: none;
+	}
+
+}
+
+#mobileBlocker h2{
+	font-size: 50px;
+	margin-bottom: 60px;
+}
+
+#mobileBlocker h3{
+	font-size: 40px;
 }
 
 header{
@@ -19,11 +47,11 @@ header{
 	margin-left: 1.5vw;
 	margin-right: 1.5vw;
 	margin-bottom: 4px;
-	color: #D29E50;
+	color: #D29E50 !important;
 }
 
 .headerItem:hover{
-	color: #FBA92D;
+	color: #FBA92D !important;
 }
 
 .headerItem:first-child{
@@ -37,7 +65,7 @@ header{
 }
 
 .selected{
-	color: #FBA92D;
+	color: #FBA92D !important;
 	text-decoration: underline;
 }
 
@@ -45,11 +73,11 @@ a{
 	color: #FBA92D !important;
 }
 
-#content{
+.content{
 	width: 100%;
 	min-height: calc(100vh - 9vw);
 	padding-top: 10vh;
-	background-image: url(img/forestpathBlurSmall.png);
+	background-image: url(img/forestpath.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -107,6 +135,12 @@ h3{
 	border-right: 1px solid #D29E50;
 	padding-left: 2vh;
 	padding-right: 2vh;
+}
+
+#homeContent{
+	height: 45vw;
+	min-height: 45vw;
+	max-height: 56vw;
 }
 
 #homeBox{
@@ -174,7 +208,7 @@ h3{
 #brainBoi{
 	width: 22vw;
 	height: 18vw;
-	background-image: url(img/brainboiTrans2.gif);
+	background-image: url(img/brainboi.gif);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	float: right;
@@ -343,8 +377,10 @@ h3{
 
 #youtubeIframe{
 	margin-left: 7vw;
-	margin-top: 5vh;
+	margin-top: 7vh;
 	display: inline-block;
+	width: 29vw;
+    height: 33vh;
 }
 
 #antmationBox{
@@ -366,4 +402,45 @@ h3{
     background-repeat: no-repeat;
     float: right;
     margin-bottom: 5vh;
+}
+
+#contactBox{
+	width: 75vw;
+	margin: 20vh auto;
+}
+
+#procesBox{
+	width: 90%;
+	margin: 5vh auto;
+	text-align: center;
+}
+
+#procesBox .grayTransparentBoxBorderLines{
+	padding-bottom: 3vh;
+}
+
+#procesBox h3{
+	text-align: justify;
+    width: 78%;
+    margin: 0px auto 1.4vh;
+}
+
+#papierImage{
+	width: 31vw;
+    height: 30vw;
+    background-image: url(img/papier.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0vh auto 1vh;
+}
+
+#wireframeImage{
+	width: 41vw;
+    height: 30vw;
+    background-image: url(img/wireframe.png);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0vh auto 1vh;
 }
