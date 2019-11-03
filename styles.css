@@ -98,10 +98,13 @@ footer{
 
 footer a{
 	display: block;
-	color: black !important;
 	font-size: 0.8vw;
 	font-weight: bold;
-	margin-top: 14.89vw;
+	margin: 14.89vw auto;
+	background-color: #515A65;
+	width: 4vw;
+	padding-top: 0.3vh;
+	padding-bottom: 0.3vh;
 }
 
 h1{
