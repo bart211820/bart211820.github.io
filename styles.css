@@ -1,7 +1,13 @@
+@font-face {
+  font-family: fontAverage;
+  src: url(average-regular.ttf);
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	/*font-family: Copperplate Gothic,fontAverage;*/
 	font-family: "Segoe UI",Arial,sans-serif;
 }
 
@@ -35,6 +41,156 @@ a{
 	user-select: none;
 }
 
+.falseLink{
+	cursor: not-allowed;
+}
+
+.headerFont{
+	font-family: Copperplate Gothic,fontAverage;
+}
+
 body{
-	
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header{
+	height: 40px;
+	background-color: #4d4d4d;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+}
+
+#homeButton{
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	margin-left: 5px;
+}
+
+#headerLinkContainer{
+	display: flex;
+	justify-content: center;
+}
+
+.headerLink{
+	color: white !important;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 25px;
+}
+
+#filterButton{
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#content{
+	width: 100%;
+	min-height: calc(90vh - 40px);
+}
+
+footer{
+	background-color: #4d4d4d;
+	height: 10vh;
+	color: white;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+#copyright{
+	width: 100%;
+	text-align: center;
+}
+
+#sourcesButton{
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+	cursor: pointer;
+}
+
+h1{
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 240px;
+	color: #262626;
+	text-shadow:
+       3px 6px 0 #d9d9d9,
+     -1px -1px 0 #d9d9d9,  
+      1px -1px 0 #d9d9d9,
+      -1px 1px 0 #d9d9d9,
+       1px 1px 0 #d9d9d9;
+}
+
+#homeInfo{
+	width: 70%;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 30px;
+	color: #262626;
+	text-shadow:
+       1px 1px 0 #d9d9d9,
+     -1px -1px 0 #d9d9d9,  
+      1px -1px 0 #d9d9d9,
+      -1px 1px 0 #d9d9d9,
+       1px 1px 0 #d9d9d9;
+}
+
+#homeLinksContainer{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	margin: 80px auto;
+}
+
+.homeLink div{
+	font-weight: bold;
+	font-size: 31px;
+	line-height: 240px;
+	color: white;
+	height: 260px;
+	width: 260px;
+	background-color: white;
+	text-align: center;
+	text-shadow:
+       1px 1px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#homeMystery{
+	background-image: url(img/lurkingCat.png);
+	background-size: 250% 180%;
+	background-repeat: no-repeat;
+	background-position: 48% 90%;
+}
+
+#homeEmotion{
+	background-image: url(img/emotion.png);
+	background-size: 180% 120%;
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+}
+
+#homeIndustrial{
+	background-image: url(img/industrial.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 46% 50%;
 }
