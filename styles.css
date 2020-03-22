@@ -84,12 +84,49 @@ header{
 	font-size: 25px;
 }
 
+#showHeaderLinksButton{
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	display: none;
+	cursor: pointer;
+}
+
 #filterButton{
 	background-color: white;
 	height: 30px;
 	width: 30px;
 	margin-right: 5px;
 	cursor: pointer;
+}
+
+#secretHeader{
+	position: absolute;
+	background-color: rgba(77, 77, 77, 0.7);
+	width: 100%;
+}
+
+.secretHeaderLink{
+	font-weight: bold;
+	color: white;
+	font-size: 68px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid black;
+	text-shadow:
+       1px 1px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+.secretHeaderLink:hover{
+	background-color: green;
+	background-color: rgba(26, 26, 26, 0.8);
 }
 
 #content{
@@ -108,6 +145,7 @@ footer{
 #copyright{
 	width: 100%;
 	text-align: center;
+	font-size: 16px;
 }
 
 #sourcesButton{
@@ -194,3 +232,72 @@ h1{
 	background-repeat: no-repeat;
 	background-position: 46% 50%;
 }
+
+
+
+
+
+
+@media (min-width: 1160px) {
+	#secretHeader{
+		display: none;
+	}
+}
+
+@media (max-width: 1160px) {
+	header{
+		height: 160px;
+		background-color: #4d4d4d;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10px;
+	}
+
+	#homeButton{
+		height: 140px;
+		width: 140px;
+		margin-left: 10px;
+	}
+
+	.headerLink{
+		display: none;
+	}
+
+	#filterButton{
+		height: 140px;
+		width: 140px;
+		margin-right: 10px;
+	}
+
+	#showHeaderLinksButton{
+		display: block;
+		height: 140px;
+		width: 140px;
+	}
+
+	#copyright{
+		font-size: 23px;
+	}
+
+	#homeLinksContainer{
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.homeLink div{
+		height: 700px;
+		width: 700px;
+		margin: 0px auto 25px;
+		font-size: 70px;
+		line-height: 680px;
+		text-shadow:
+	       3px 3px 0 black,
+	     -1px -1px 0 black,  
+	      1px -1px 0 black,
+	      -1px 1px 0 black,
+	       1px 1px 0 black;
+	    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+}
+

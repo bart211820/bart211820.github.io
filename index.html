@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<meta name="author" content="Bart van der Lans">
 	<meta charset="utf-8">
-	<title>Bart van der Lans</title>
+	<title>Gray</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<header>
-		<a href="index.html" id="homeButton">
-			<!-- <div id="homeButton"></div> -->
-		</a>
+		<a href="index.html" id="homeButton"></a>
 		<div id="headerLinkContainer" class="noSelect">
 			<a href="emotion.html" class="headerLink headerFont">Emotion</a>
 			<a href="mystery.html" class="headerLink headerFont">Mystery</a>
 			<a class="headerLink falseLink headerFont">Industrial</a>
+			<div id="showHeaderLinksButton"></div>
 		</div>
 		<div id="filterButton"></div>
 	</header>
+	<div id="secretHeader" class="displayNone">
+		<a href="emotion.html" class="secretHeaderLink headerFont">Emotion</a>
+		<a href="mystery.html" class="secretHeaderLink headerFont">Mystery</a>
+		<a class="secretHeaderLink falseLink headerFont">Industrial</a>
+	</div>
 	<div id="content">
 		<h1 class="headerFont">- Gray -</h1>
 		<div id="homeInfo" class="headerFont">
