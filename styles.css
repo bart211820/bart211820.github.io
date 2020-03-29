@@ -319,12 +319,23 @@ h6{
 	justify-content: space-between;
 }
 
-.layer1Container .layer1Text{
+.layer1Text{
 	width: 60%;
 	font-size: 16px;
 }
 
 .layer1Image{
+	width: 39%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.layer2Text{
+	width: 60%;
+	font-size: 16px;
+}
+
+.layer2Image{
 	width: 39%;
 	height: 186px;
 	background-repeat: no-repeat;
@@ -345,7 +356,7 @@ h6{
 .layer1LinksContainer div{
 	display: inline-block;
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 210px;
 	color: white;
 	height: 220px;
@@ -376,7 +387,42 @@ h6{
 	background-position: 50% 80%;
 }
 
+.topicGradient{
+	width: 1100px;
+	height: 100px;
+	margin: 30px auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
 
+#depressionGradient{
+	background-image: url(img/gradients/depressing.png);
+}
+
+#layer1Disconnected{
+	background-image: url(img/disconnected.png);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#layer1Sad{
+	background-image: url(img/sad.png);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#layer1Despair{
+	background-image: url(img/despair.png);
+	background-size: cover;
+	background-position: 55% 50%;
+}
+
+#layer1Dispassionate{
+	background-image: url(img/dispassionate.png);
+	background-size: 220% 140%;
+    background-position: 100% 100%;
+}
 
 
 
