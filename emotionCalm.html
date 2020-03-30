@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta name="author" content="Bart van der Lans">
+	<meta charset="utf-8">
+	<title>Gray</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<a href="index.html" id="homeButton"></a>
+		<div id="headerLinkContainer" class="noSelect">
+			<a href="emotion.html" class="headerLink headerFont">Emotion</a>
+			<a href="mysteryQuestionability.html" class="headerLink headerFont">Mystery</a>
+			<a class="headerLink falseLink headerFont">Industrial</a>
+			<div id="showHeaderLinksButton"></div>
+		</div>
+		<a href="filterPage.html" id="filterButton"></a>
+	</header>
+	<div id="secretHeader" class="displayNone">
+		<a href="emotion.html" class="secretHeaderLink headerFont">Emotion</a>
+		<a href="mystery.html" class="secretHeaderLink headerFont">Mystery</a>
+		<a class="secretHeaderLink falseLink headerFont">Industrial</a>
+	</div>
+	<div id="content">
+		<a href="emotion.html">
+			<div class="previousPageDisplay" id="previousPageEmotion">
+				<h3 class="headerFont">Emotion</h3>
+			</div>
+		</a>
+		<div class="currentPageDisplay" id="currentPageCalm">
+			<h2 class="headerFont">Calmness</h2>
+		</div>
+		<div class="topicGradient" id="calmGradient"></div>
+		<div class="layer1Container">
+			<div class="layer1Text">
+				<h5>What is calmness</h5>
+				<p>Calmness is the mental state of peace of mind being free from agitation, excitement, or disturbance. It also refers being in a state of serenity, tranquillity, or peace. Calmness can most easily occur for the average person during a state of relaxation, but it can also be found during much more alert and aware states.</p>
+				<h5>Gray's relation to calmness</h5>
+				<p>Gray is often seen as being a bit dull and boring. However, the right shade of gray can actually be very calming and relaxing. It’s a perfect neutral color, which means it works well with pretty much any color or palette. It’s for example a great option for any room in your home.</p>
+				<h5>Shades of gray</h5>
+				<p>They physical effects of gray are less pronounced than other colors, but it tends to have a dampening effect–both on other colors and on our moods. It’s calm but too much gray, particularly if it’s a dark gray–can be depressing. Therefore if you want to attain a calm atmosphere it's recommended to use shades of gray that are closer to white.</p>
+			</div>
+			<div class="layer1Image">
+				<img src="img/bedroom.png" width="100%">
+			</div>
+		</div>
+		<h5 class="moreLinksH headerFont">Read more about calmness in the color gray:</h5>
+		<div class="layer1LinksContainer">
+			<a class="layer1Link falseLink">
+				<div class="headerFont" id="layer1Neutral">Neutral</div>
+			</a>
+			<a class="layer1Link lastLayer1Link falseLink">
+				<div class="headerFont" id="layer1Cool">Cool</div>
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div id="copyright" class="headerFont">© 2020 by Bart van der Lans</div>
+		<a href="sourcesPage.html" id="sourcesButton"></a>
+	</footer>
+</body>
+</html>

@@ -66,10 +66,13 @@ header{
 }
 
 #homeButton{
-	background-color: white;
 	height: 30px;
 	width: 30px;
 	margin-left: 5px;
+	background-image: url(img/grayIcon.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 }
 
 #headerLinkContainer{
@@ -93,7 +96,10 @@ header{
 }
 
 #filterButton{
-	background-color: white;
+	background-image: url(img/filterIcon.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
 	margin-right: 5px;
@@ -149,7 +155,10 @@ footer{
 }
 
 #sourcesButton{
-	background-color: white;
+	background-image: url(img/sourcesIcon.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
 	margin-right: 10px;
@@ -299,8 +308,26 @@ h6{
 	background-position: 50% 30%;
 }
 
+#currentPageDepression{
+	background-image: url(img/depressing.png);
+	background-size: cover;
+	background-position: 50% 18%;
+}
+
+#currentPageCalm{
+	background-image: url(img/calm.png);
+	background-size: cover;
+	background-position: 50% 70%;
+}
+
+#currentPageQuestionability{
+	background-image: url(img/questionability.png);
+	background-size: cover;
+	background-position: 50% 45%;
+}
+
 .fullPageDisplay{
-	min-height: calc(90vh - 140px);
+	min-height: calc(90vh - 120px);
 	background-repeat: no-repeat;
 }
 
@@ -308,6 +335,12 @@ h6{
 	background-image: url(img/disconnected.png);
 	background-size: cover;
 	background-position: 50% 60%;
+}
+
+#fullPageIndecisiveness{
+	background-image: url(img/indecisiveness.png);
+	background-size: cover;
+	background-position: 50% 80%;
 }
 
 .previousPageDisplay{
@@ -320,6 +353,24 @@ h6{
 	background-image: url(img/emotion.png);
 	background-size: cover;
 	background-position: 50% 47%;
+}
+
+#previousPageDepression{
+	background-image: url(img/depressing.png);
+	background-size: cover;
+	background-position: 50% 30%;
+}
+
+#previousPageMystery{
+	background-image: url(img/lurkingCat.png);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#previousPageQuestionability{
+	background-image: url(img/questionability.png);
+	background-size: cover;
+	background-position: 50% 27%;
 }
 
 .layer1Container{
@@ -378,7 +429,7 @@ h6{
 	width: 220px;
 	background-color: white;
 	text-align: center;
-	margin-right: 69px;
+	margin-right: 68px;
 	text-shadow:
        1px 1px 0 black,
      -1px -1px 0 black,  
@@ -400,10 +451,10 @@ h6{
 }
 
 #layer1Depression{
-	background-image: url(img/emotion.png);
-	background-size: 180% 120%;
+	background-image: url(img/depressing.png);
+	background-size: 114% 110%;
 	background-repeat: no-repeat;
-	background-position: 50% 80%;
+	background-position: 0% 50%;
 }
 
 .topicGradient{
@@ -417,6 +468,10 @@ h6{
 
 #depressionGradient{
 	background-image: url(img/gradients/depressing.png);
+}
+
+#calmGradient{
+	background-image: url(img/gradients/calm.png);
 }
 
 #layer1Disconnected{
@@ -443,10 +498,34 @@ h6{
     background-position: 100% 100%;
 }
 
+#layer1Neutral{
+	background-image: url(img/neutral2.png);
+	background-size: cover;
+    background-position: 50% 50%;
+}
+
+#layer1Cool{
+	background-image: url(img/cool.png);
+	background-size: cover;
+    background-position: 60% 50%;
+}
+
+#layer1Indecisiveness{
+	background-image: url(img/indecisiveness.png);
+	background-size: cover;
+    background-position: 50% 50%;
+}
+
+#layer1Ambiguity{
+	background-image: url(img/ambiguity.png);
+	background-size: cover;
+    background-position: 50% 50%;
+}
+
 .fullPageContent{
 	width: 70%;
-	margin: 20px auto;
-	background-color: rgba(179, 179, 179, 0.6);
+	margin: 20px auto 40px;
+	background-color: rgba(179, 179, 179, 0.7);
 	padding-top: 10px;
 	padding-bottom: 20px;
 	padding-left: 22px;
@@ -468,6 +547,31 @@ h6{
     box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
 }
 
+#sourcesContent{
+	margin: 30px auto;
+	width: 70%;
+	background-color: rgba(179, 179, 179, 0.7);
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+#sourcesContent h5{
+	font-size: 25px;
+}
+
+#sourcesContent h6{
+	font-size: 21px;
+	font-weight: normal;
+}
+
+#sourcesContent a{
+	font-size: 17px;
+	margin-left: 5px;
+	color: blue;
+}
 
 @media (min-width: 1160px) {
 	#secretHeader{
