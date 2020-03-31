@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta name="author" content="Bart van der Lans">
+	<meta charset="utf-8">
+	<title>Gray</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<a href="index.html" id="homeButton"></a>
+		<div id="headerLinkContainer" class="noSelect">
+			<a href="emotion.html" class="headerLink headerFont">Emotion</a>
+			<a href="mysteryQuestionability.html" class="headerLink headerFont">Mystery</a>
+			<a class="headerLink falseLink headerFont">Industrial</a>
+			<div id="showHeaderLinksButton"></div>
+		</div>
+		<a href="filterPage.html" id="filterButton"></a>
+	</header>
+	<div id="secretHeader" class="displayNone">
+		<a href="emotion.html" class="secretHeaderLink headerFont">Emotion</a>
+		<a href="mysteryQuestionability.html" class="secretHeaderLink headerFont">Mystery</a>
+		<a class="secretHeaderLink falseLink headerFont">Industrial</a>
+	</div>
+	<div id="filterContent">
+		<div id="filterOptionsHolder">
+			<h5 class="headerFont">Filters:</h5><br>
+			<h6>Topic:</h6>
+			<select id="selectTopic">
+				<option value="0">Any</option>
+				<option value="1">Mystery</option>
+				<option value="2">Emotion</option>
+				<option value="3">Industrial</option>
+			</select><br><br>
+
+			<h6>Shades:</h6>
+			<input type="checkbox" name="light" id="light" checked>
+			<label for="light">Light gray</label><br>
+			<input type="checkbox" name="medium" id="medium" checked>
+			<label for="medium">Medium gray</label><br>
+			<input type="checkbox" name="dark" id="dark" checked>
+			<label for="dark">Dark gray</label><br><br>
+
+			<h6>Subject:</h6>
+			<input type="checkbox" name="mental" id="mental" checked>
+			<label for="mental">Mental</label><br>
+			<input type="checkbox" name="physical" id="physical" checked>
+			<label for="physical">Physical</label><br><br>
+
+			<h6>Feelings:</h6>
+			<input type="checkbox" name="positive" id="positive" checked>
+			<label for="positive">Positive</label><br>
+			<input type="checkbox" name="negative" id="negative" checked>
+			<label for="negative">Negative</label><br>
+			<input type="checkbox" name="neutral" id="neutral" checked>
+			<label for="neutral">Neutral</label><br><br>
+
+			<input type="checkbox" name="available" id="available">
+			<label for="available">Show only if available</label><br><br>
+
+			<button id="goFilterButton">Go filter</button>
+		</div>
+		<div id="filterResultsHolder">
+			<p id="filterMessage">Choose a or multiple filter(s) and click on the filter button to see results..</p>
+		</div>
+	</div>
+	<footer>
+		<div id="copyright" class="headerFont">© 2020 by Bart van der Lans</div>
+		<a href="sourcesPage.html" id="sourcesButton"></a>
+	</footer>
+</body>
+</html>
