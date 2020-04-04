@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: black;
+}
+
+#animationContainer{
+	width: 1440px;
+	height: 810px;
+	margin: 50px auto 0px;
+	position: relative;
+}
+
+#ninjaDiv{
+	height: 100%;
+	width: 1110px;
+	position: absolute;
+	left: 0px;
+	background-image: url(img/SwordAttack.gif);
+	background-size: cover;
+}
+
+#buttonsDiv{
+	height: 100%;
+	width: 342px;
+	position: absolute;
+	right: 0px;
+	z-index: 99;
+	background-image: url(img/buttons.gif);
+	background-size: cover;
+	padding-top: 100px;
+}
+
+#buttonsDiv div{
+	width: 280px;
+	height: 185px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+a{
+	text-align: center;
+	margin: 20px auto 50px;
+	display: block;
+	color: #F6001D;
+	font-size: 30px;
+}
