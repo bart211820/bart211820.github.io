@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta name="author" content="Bart van der Lans">
+	<meta charset="utf-8">
+	<title>Gray</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<a href="index.html" id="homeButton"></a>
+		<div id="headerLinkContainer" class="noSelect">
+			<a href="emotion.html" class="headerLink headerFont">Emotion</a>
+			<a href="mysteryQuestionability.html" class="headerLink headerFont">Mystery</a>
+			<a class="headerLink falseLink headerFont">Industrial</a>
+			<div id="showHeaderLinksButton"></div>
+		</div>
+		<a href="filterPage.html" id="filterButton"></a>
+	</header>
+	<div id="secretHeader" class="displayNone">
+		<a href="emotion.html" class="secretHeaderLink headerFont">Emotion</a>
+		<a href="mystery.html" class="secretHeaderLink headerFont">Mystery</a>
+		<a class="secretHeaderLink falseLink headerFont">Industrial</a>
+	</div>
+	<div id="content">
+		<a class="falseLink">
+			<div class="previousPageDisplay" id="previousPageMystery">
+				<h3 class="headerFont">Mystery</h3>
+			</div>
+		</a>
+		<div class="currentPageDisplay" id="currentPageQuestionability">
+			<h2 class="headerFont">Questionability</h2>
+		</div>
+		<div class="topicGradient" id="depressionGradient"></div>
+		<div class="layer1Container">
+			<div class="layer1Text">
+				<h5>What is questionability</h5>
+				<p>If you say that something is questionable, you mean that it is not completely honest, reasonable, or acceptable.</p>
+				<h5>Gray's relation to questionability</h5>
+				<p>There is a saying that goes: "Not everything is black or white", meaning not everything is one thing or the other. Not everything is good or bad, or right or wrong, there can be shades of gray inbetween. Gray is associated with morally questionable matters, these are actions that aren't illigal but still deemed wrong by the majority of society.</p>
+				<h5>Shades of gray</h5>
+				<p>All shades of gray can be related to questionability, however the more in the middle of the spectrum the color is the more questionable it can get, since it's not leaning to a specific side.</p>
+			</div>
+			<div class="layer1Image">
+				<img src="img/questionmark.png" width="100%">
+			</div>
+		</div>
+		<h5 class="moreLinksH headerFont">Read more about depression in the color gray:</h5>
+		<div class="layer1LinksContainer">
+			<a href="mysteryQuestionabilityIndecisiveness.html" class="layer1Link">
+				<div class="headerFont" id="layer1Indecisiveness">Indecisiveness</div>
+			</a>
+			<a class="layer1Link lastLayer1Link falseLink">
+				<div class="headerFont" id="layer1Ambiguity">Ambiguity</div>
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div id="copyright" class="headerFont">© 2020 by Bart van der Lans</div>
+		<a href="sourcesPage.html" id="sourcesButton"></a>
+	</footer>
+</body>
+</html>
