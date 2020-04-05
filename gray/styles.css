@@ -87,6 +87,10 @@ header{
 	font-size: 25px;
 }
 
+.linkWithUnderline{
+	text-decoration: underline !important;
+}
+
 #showHeaderLinksButton{
 	background-color: white;
 	height: 30px;
@@ -143,7 +147,7 @@ header{
 
 footer{
 	background-color: #4d4d4d;
-	height: 10vh;
+	height: 14vh;
 	color: white;
 	font-weight: bold;
 	padding-top: 15px;
@@ -198,6 +202,8 @@ h2{
 
 .fullPageDisplay h2{
 	line-height: 155px;
+	margin-bottom: 60px;
+	margin-top: 20px;
 }
 
 h3{
@@ -255,7 +261,7 @@ h6{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 5px;
-	margin: 80px auto;
+	margin: 80px auto 60px;
 }
 
 .homeLink div{
@@ -297,6 +303,18 @@ h6{
 	background-position: 46% 50%;
 }
 
+#indexInformation{
+	background-color: rgba(179, 179, 179, 0.7);
+	width: 70%;
+	min-height: 5px;
+	margin: 80px auto 60px;
+	border-radius: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 17px;
+	padding-bottom: 20px;
+}
+
 .currentPageDisplay{
 	height: 500px;
 	border-bottom: 20px solid #4d4d4d;
@@ -330,6 +348,8 @@ h6{
 .fullPageDisplay{
 	min-height: calc(90vh - 120px);
 	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 #fullPageDisconnected{
@@ -375,27 +395,33 @@ h6{
 }
 
 .layer1Container{
-	background-color: rgba(77, 77, 77, 0.6);
+	background-color: rgba(179, 179, 179, 0.7);
 	width: 1100px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 27px;
-	padding-right: 27px;
+	padding-top: 7px;
+	padding-bottom: 35px;
+	padding-left: 37px;
+	padding-right: 37px;
 	margin: 0px auto 40px;
 	display: flex;
 	justify-content: space-between;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .layer1Text{
 	width: 60%;
 	font-size: 16px;
+	padding-right: 20px;
+}
+
+.layer1Text h5{
+	margin-top: 20px;
 }
 
 .layer1Image{
 	width: 39%;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	margin-top: 10px;
 }
 
 .layer2Text{
@@ -527,12 +553,16 @@ h6{
 .fullPageContent{
 	width: 70%;
 	margin: 20px auto 40px;
-	background-color: rgba(179, 179, 179, 0.7);
+	background-color: rgba(230, 230, 230, 0.8);
 	padding-top: 15px;
 	padding-bottom: 25px;
-	padding-left: 27px;
-	padding-right: 27px;
+	padding-left: 40px;
+	padding-right: 40px;
 	border-radius: 5px;
+}
+
+.fullPageContent h5{
+	margin-top: 20px;
 }
 
 .fullPageBackButton{
@@ -542,8 +572,7 @@ h6{
 	padding-right: 10px;
 	color: white;
 	background-color: #4d4d4d;
-	margin-top: 60px;
-	margin: 20px auto 0px;
+	margin: 40px auto 20px;
     display: block;
     max-width: 300px;
     text-align: center;
@@ -588,7 +617,7 @@ h6{
 	width: 25%;
 	display: inline-block;
 	margin: 0px;
-	border-radius: 0px 30px 30px 0px;
+	border-radius: 0px 0px 0px 0px;
 	padding: 20px;
 }
 
@@ -633,6 +662,7 @@ h6{
 	display: inline-block;
 	margin: 0px;
 	overflow-y: scroll;
+	/*direction: rtl;*/
 }
 
 .filterResult{
