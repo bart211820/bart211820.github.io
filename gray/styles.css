@@ -346,7 +346,7 @@ h6{
 }
 
 .fullPageDisplay{
-	min-height: calc(90vh - 120px);
+	min-height: calc(90vh - 90px);
 	background-repeat: no-repeat;
 	padding-top: 20px;
 	padding-bottom: 50px;
